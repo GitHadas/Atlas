@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/44/44386.png" type="image/x-icon">
+    <title>Atlas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body
+    background="https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <nav class="navbar navbar-expand-md fixed-top" data-bs-theme="dark" data-aos="fade-down" data-aos-duration="1000"
+        style="background-color: rgba(255, 255, 255, 0.2)">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand fw-bolder d-flex align-items-center"><i class="fa fa-globe fs-1 m-2"
+                    aria-hidden="true"></i>Atlas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shortcut" href="#">USA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shortcut" href="#">ISRAEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shortcut" href="#">UK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shortcut" href="#">FRANCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shortcut" href="#">THAILAND</a>
+                    </li>
+                </ul>
+                <form class="d-flex m-3" role="search">
+                    <input id="inputCountry" class="form-control me-2" type="search" placeholder="Search country"
+                        aria-label="Search">
+                    <button id="searchButton" class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <main class="container w-75 mt-5 h-100" style="background-color: rgba(255, 255, 255, 0.2)">
+
+    </main>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
